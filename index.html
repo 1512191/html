@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+<link rel="stylesheet" href="style.css">
+<title>Caculator</title>
+<style>
+.container-fluid{
+    width: 80%;
+    margin-top:100px;
+    margin-bottom: 100px;
+    border-radius: 10px;
+}
+input[type="button"], input[type="text"]{
+    width: 100%;
+    height: 100px;
+    padding: 0px;
+    margin:0px;
+    background-color: white;
+    font-size: 36px;
+}
+.col, .col-3{
+    border:1px solid gray;
+    padding: 0px;
+}
+
+#equal{
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+#result{
+   
+    background-color: black;
+    color: white;
+    text-align: right;
+    font-size: 60px;
+    padding-right:15px;
+    }
+    
+</style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row result">
+            <input type="text" id="result" value="0" readonly>
+        </div>
+        <div class="keyboard">
+            <div class="row keyboard">
+                <div class="col">
+                    <input type="button" name="Add" class="operator" id="Add" value="+">
+                </div>
+                <div class="col">
+                    <input type="button" name="Sub" class="operator" id="Sub" value="-">
+                </div>
+                <div class="col">
+                    <input type="button" name="Div" class="operator" id="Div" value="/">
+                </div>
+                <div class="col">
+                    <input type="button" name="Mul" class="operator" id="Mul" value="x">
+                </div>
+            </div>
+            <div class="row keyboard">
+                <div class="col-9">
+                    <div class="row">
+                        <div class="col">
+                            <input type="button" name="" id="" value="7">
+                        </div>
+                        <div class="col">
+                            <input type="button" name="" id="" value="8">
+                        </div>
+                        <div class="col">
+                            <input type="button" name="" id="" value="9">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <input type="button" name="" id="" value="4">
+                        </div>
+                        <div class="col">
+                            <input type="button" name="" id="" value="5">
+                        </div>
+                        <div class="col">
+                            <input type="button" name="" id="" value="6">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <input type="button" name="" id="" value="1">
+                        </div>
+                        <div class="col">
+                            <input type="button" name="" id="" value="2">
+                        </div>
+                        <div class="col">
+                            <input type="button" name="" id="" value="3">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <input type="button" name="" id="" value="0">
+                        </div>
+                        <div class="col">
+                            <input type="button" name="point" class="point" id="point" value=".">
+                        </div>
+                        <div class="col">
+                            <input type="button" name="reset" class="reset" id="reset" value="C">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <input type="button" name="equal" id="equal" value="=">
+                </div>
+            </div>
+        </div>
+        
+      
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="./caculator.js"></script>
+</body>
+</html>
